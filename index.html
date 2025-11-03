@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Preview Test Page</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Example Page Title">
+  <meta property="og:description" content="This is an example description for Open Graph preview testing.">
+  <meta property="og:image" content="https://via.placeholder.com/600x315.png?text=OG+Image">
+  <meta property="og:url" content="http://localhost:8000/redirect.html">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Example Page Title">
+  <meta name="twitter:description" content="This is an example description for Twitter Card preview testing.">
+  <meta name="twitter:image" content="https://via.placeholder.com/600x315.png?text=Twitter+Image">
+
+</head>
+<body>
+  <h1>Example Page for Link Preview Testing</h1>
+  <p>This page has proper Open Graph and Twitter Card meta tags, but when accessed via the URL below, it will redirect (simulating a 302) to another page. This should trigger warnings in LinkedIn Post Inspector or Facebook Sharing Debugger.</p>
+
+  <p>Test link: <a href="redirect.html">http://localhost:8000/redirect.html</a></p>
+</body>
+</html>
