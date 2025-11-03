@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Link Preview Test Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Redirect Page</title>
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Example Page Title">
-  <meta property="og:description" content="This is an example description for Open Graph preview testing.">
-  <meta property="og:image" content="https://via.placeholder.com/600x315.png?text=OG+Image">
-  <meta property="og:url" content="http://localhost:8000/redirect.html">
+  <meta property="og:title" content="Sample Redirect Page">
+  <meta property="og:description" content="This page simulates a redirect issue for social media previews.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x627.png?text=Sample+Image">
+  <meta property="og:url" content="https://your-github-username.github.io/sample-redirect-site/index.html">
+  <meta property="og:type" content="website">
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Example Page Title">
-  <meta name="twitter:description" content="This is an example description for Twitter Card preview testing.">
-  <meta name="twitter:image" content="https://via.placeholder.com/600x315.png?text=Twitter+Image">
+  <!-- Simulated 302 Redirect -->
+  <meta http-equiv="refresh" content="0; url=redirect.html">
+  <script>
+    // JavaScript redirect fallback
+    window.location.replace("redirect.html");
+  </script>
 
 </head>
 <body>
-  <h1>Example Page for Link Preview Testing</h1>
-  <p>This page has proper Open Graph and Twitter Card meta tags, but when accessed via the URL below, it will redirect (simulating a 302) to another page. This should trigger warnings in LinkedIn Post Inspector or Facebook Sharing Debugger.</p>
-
-  <p>Social Media Sharing link: <a href="redirect.html">https://github.com/jhrahman/social/redirect.html</a></p>
+  <h1>Sample Redirect Page</h1>
+  <p>If you see this text, your browser doesn’t support auto-redirect.</p>
 </body>
 </html>
-
